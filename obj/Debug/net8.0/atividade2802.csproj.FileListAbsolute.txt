@@ -1,0 +1,14 @@
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\bin\Debug\net8.0\atividade2802.exe
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\bin\Debug\net8.0\atividade2802.deps.json
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\bin\Debug\net8.0\atividade2802.runtimeconfig.json
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\bin\Debug\net8.0\atividade2802.dll
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\bin\Debug\net8.0\atividade2802.pdb
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.dll
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\refint\atividade2802.dll
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.pdb
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\atividade2802.genruntimeconfig.cache
+C:\Users\lucas\OneDrive\Desktop\workspace\code\3_periodo\poo\atividade2802\obj\Debug\net8.0\ref\atividade2802.dll

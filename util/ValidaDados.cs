@@ -2,11 +2,11 @@ namespace Util
 {
     public static class ValidaDados
     {
-        private static bool ValidaCPF(string cpf)
+        public static bool ValidaCPF(string cpf)
         {
-            // Essa função espera receber o CPF já num formato de 11 dígitos, ou seja, essa validação tem que ser feita na entrada dos daods
 
-            if (cpf.Distinct().Count() == 1) return false; // CPF não pode ter todos os números iguais
+            if (cpf.Length != 11) return false;
+            if (cpf.Distinct().Count() == 1) return false;
 
             int[] pesos1 = [10, 9, 8, 7, 6, 5, 4, 3, 2];
             int[] pesos2 = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2];
@@ -22,11 +22,18 @@ namespace Util
 
         private static int CalcularDigitoVerificador(string numeros, int[] pesos)
         {
-            int soma = numeros.Select((t, i) => (t - '0') * pesos[i]).Sum(); // Transforma cada valor da string em um inteiro, multiplica pelo peso e soma-os
+            int soma = numeros.Select((t, i) => (t - '0') * pesos[i]).Sum();
             int resto = soma % 11;
             return resto < 2 ? 0 : 11 - resto;
         }
 
+        public static bool ValidaID(string id)
+        {
+            // Regra de negócio: ID tem que ter 8 dígitos
+            if (string.IsNullOrEmpty(id)) return false;
+            return id.Length == 8 && int.TryParse(id, out _);
+        }
 
+        
     }
 }
