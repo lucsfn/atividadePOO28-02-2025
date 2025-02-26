@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace Util
 {
     public static class ValidaDados
@@ -29,30 +31,22 @@ namespace Util
 
         public static bool ValidaID(string id)
         {
-            // Regra de negócio: ID tem que ter 8 dígitos
+            // Regra de negócio: ID tem que ter 8 dígitos numéricos
             if (string.IsNullOrEmpty(id)) return false;
             return id.Length == 8 && int.TryParse(id, out _);
         }
 
         public static bool ValidaEmail(string email)
         {
-            // O que é considerado um email válido? Para a lógica desse código: tem que ter a parte local válida, tem que ter o "@" seguido de um domínio válido e uma extensão de domínio válida.
-            string[] dominiosValidos = ["gmail.com", "outlook.com", "hotmail.com", "yahoo.com", "live.com"];
-
-            string[] partes = email.Split('@');
-
-            if (partes.Length == 2)
-            {
-                string dominio = partes[1];
-                return dominiosValidos.Contains(dominio);
-            }
-            
-            return false;
+            string padraoEmail = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            return Regex.IsMatch(email, padraoEmail, RegexOptions.IgnoreCase);
         }
 
-
-
-
-
+        public static bool ValidaPlacaDeCarro(string placa)
+        {
+            // Padrão Mercosul: AAA1A11
+            string padraoMercosul = @"^[A-Z]{3}[0-9][A-Z][0-9]{2}$";
+            return Regex.IsMatch(placa, padraoMercosul, RegexOptions.IgnoreCase);
+        }
     }
 }
