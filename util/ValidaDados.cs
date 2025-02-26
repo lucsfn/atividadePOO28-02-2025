@@ -34,6 +34,25 @@ namespace Util
             return id.Length == 8 && int.TryParse(id, out _);
         }
 
-        
+        public static bool ValidaEmail(string email)
+        {
+            // O que é considerado um email válido? Para a lógica desse código: tem que ter a parte local válida, tem que ter o "@" seguido de um domínio válido e uma extensão de domínio válida.
+            string[] dominiosValidos = ["gmail.com", "outlook.com", "hotmail.com", "yahoo.com", "live.com"];
+
+            string[] partes = email.Split('@');
+
+            if (partes.Length == 2)
+            {
+                string dominio = partes[1];
+                return dominiosValidos.Contains(dominio);
+            }
+            
+            return false;
+        }
+
+
+
+
+
     }
 }
