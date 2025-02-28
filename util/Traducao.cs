@@ -1,10 +1,10 @@
-namespace Util
+namespace util
 {
     public static class Traducao
     {
-        // Essa classe deve funcionar como um dicionário para algumas línguas, sendo capaz de traduzir as 100 palavras mais utilizadas em inglês, espanhol e francês
+        // Essa classe deve funcionar como um dicionário para algumas línguas, sendo capaz de traduzir algumas das palavras mais utilizadas em inglês, espanhol e francês
 
-        // Dicionário com as 100 palavras
+        // Dicionário com algumas palavras
         private static readonly Dictionary<string, Dictionary<string, string>> dicionario = new Dictionary<string, Dictionary<string, string>>()
     {
         {"olá", new Dictionary<string, string>{{"en", "hello"}, {"es", "hola"}, {"fr", "bonjour"}}},

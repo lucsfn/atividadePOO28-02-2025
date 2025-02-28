@@ -1,5 +1,4 @@
-﻿using System.Collections.Specialized;
-using Util;
+﻿using util;
 
 namespace Main
 {
@@ -7,13 +6,12 @@ namespace Main
     {
         public static void Main()
         {
-            int inputUsuario = 0;
+            int inputUsuario;
 
             ImprimeMensagemInicial();
 
             do
             {
-                // Função para printar opções
                 ImprimeOpcoes();
                 inputUsuario = int.Parse(Console.ReadLine()!);
                 ControlaOpcoes(inputUsuario);
@@ -28,7 +26,7 @@ namespace Main
             Console.WriteLine("Pressione qualquer tecla para prosseguir.");
             Console.ReadKey();
         }
-        
+
         public static void ImprimeOpcoes()
         {
             Console.Clear();

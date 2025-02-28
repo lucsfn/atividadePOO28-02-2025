@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Util
+namespace util
 {
     public static class ValidaDados
     {
