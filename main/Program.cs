@@ -6,7 +6,7 @@ namespace Main
     {
         public static void Main()
         {
-
+            
             Console.ReadKey();
         }
     }
