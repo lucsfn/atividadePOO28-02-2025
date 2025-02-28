@@ -40,7 +40,7 @@ namespace Util
 
         public static bool ValidaPlacaDeCarro(string placa)
         {
-            // Padrão Mercosul: AAA1A11
+            // Padrão Mercosul (NOVO): AAA1A11
             string padraoMercosul = @"^[A-Z]{3}[0-9][A-Z][0-9]{2}$";
             return Regex.IsMatch(placa, padraoMercosul, RegexOptions.IgnoreCase);
         }
